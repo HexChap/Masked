@@ -13,4 +13,3 @@ region = Rect2(0, 0, 36, 36)
 resource_name = "key"
 script = ExtResource("1_rb7uh")
 icon = SubResource("AtlasTexture_646gu")
-hide_from_inventory = false

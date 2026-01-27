@@ -12,7 +12,4 @@ region = Rect2(0, 0, 32, 32)
 [resource]
 resource_name = "sword"
 script = ExtResource("1_81vel")
-power = 1
-speed = 0.5
 icon = SubResource("AtlasTexture_eudqs")
-hide_from_inventory = false

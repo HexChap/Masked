@@ -19,7 +19,7 @@ collision_layer = 0
 collision_mask = 8
 monitorable = false
 script = ExtResource("2_hh1eg")
-metadata/_custom_type_script = ExtResource("2_hh1eg")
+metadata/_custom_type_script = "uid://bgm8n3pwwbymt"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
 shape = SubResource("RectangleShape2D_hh1eg")
@@ -40,4 +40,4 @@ script = ExtResource("6_hh1eg")
 node = NodePath("../..")
 method_name = "transfer"
 on_completion = [NodePath("../interact")]
-metadata/_custom_type_script = ExtResource("6_hh1eg")
+metadata/_custom_type_script = "uid://dd2m5xedjwd4m"
