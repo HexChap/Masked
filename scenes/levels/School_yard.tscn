@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://5d11omi8wh17"]
+
+[sub_resource type="TileSet" id="TileSet_qvl3j"]
+
+[node name="SchoolYard" type="Node2D" unique_id=364630697]
+
+[node name="TileMap" type="TileMap" parent="." unique_id=287782895]
+tile_set = SubResource("TileSet_qvl3j")
+rendering_quadrant_size = 32
+format = 2
