@@ -1,4 +1,4 @@
-[gd_resource type="AnimationNodeStateMachine" load_steps=79 format=3 uid="uid://b4nom5gtsxhou"]
+[gd_resource type="AnimationNodeStateMachine" format=3 uid="uid://b4nom5gtsxhou"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_t7wic"]
 animation = &"char-attack/down"

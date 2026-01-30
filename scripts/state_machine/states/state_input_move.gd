@@ -9,6 +9,10 @@ func physics_update(_delta):
 		_handle_inputs()
 
 func _handle_inputs():
+	if !Globals.can_player_move:
+		entity.velocity = Vector2.ZERO
+		return
+	
 	var input_dir = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	entity.speed_multiplier = run_speed_increment if Input.get_action_strength("run") > 0 else 1.0
 	entity.move(input_dir)
