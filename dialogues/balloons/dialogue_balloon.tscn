@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cjr3itgj6bqqh"]
+[gd_scene format=3 uid="uid://cjr3itgj6bqqh"]
 
 [ext_resource type="Script" uid="uid://laoeksg0fqyb" path="res://dialogues/balloons/dialogue_balloon.gd" id="1_th60n"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_l2rj6"]
@@ -62,12 +62,12 @@ MarginContainer/constants/margin_right = 30
 MarginContainer/constants/margin_top = 15
 Panel/styles/panel = SubResource("StyleBoxFlat_uy0d5")
 
-[node name="DialogueBalloon" type="CanvasLayer"]
+[node name="DialogueBalloon" type="CanvasLayer" unique_id=1179150856]
 process_mode = 3
 layer = 100
 script = ExtResource("1_th60n")
 
-[node name="Balloon" type="Control" parent="."]
+[node name="Balloon" type="Control" parent="." unique_id=1366903019]
 unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 15
@@ -77,7 +77,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_vnod2")
 
-[node name="NameContainer" type="Panel" parent="Balloon"]
+[node name="NameContainer" type="Panel" parent="Balloon" unique_id=637209216]
 z_index = 1
 layout_mode = 0
 offset_left = 20.0
@@ -85,7 +85,7 @@ offset_top = 225.0
 offset_right = 180.0
 offset_bottom = 255.0
 
-[node name="MarginContainer" type="MarginContainer" parent="Balloon/NameContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="Balloon/NameContainer" unique_id=1300093856]
 clip_contents = true
 layout_mode = 1
 anchors_preset = 15
@@ -98,7 +98,7 @@ theme_override_constants/margin_top = 0
 theme_override_constants/margin_right = 0
 theme_override_constants/margin_bottom = 0
 
-[node name="CharacterLabel" type="RichTextLabel" parent="Balloon/NameContainer/MarginContainer"]
+[node name="CharacterLabel" type="RichTextLabel" parent="Balloon/NameContainer/MarginContainer" unique_id=416592452]
 unique_name_in_owner = true
 modulate = Color(0.905882, 0.678431, 0.537255, 1)
 layout_mode = 2
@@ -110,7 +110,7 @@ scroll_active = false
 autowrap_mode = 0
 horizontal_alignment = 1
 
-[node name="Panel" type="Panel" parent="Balloon"]
+[node name="Panel" type="Panel" parent="Balloon" unique_id=866869008]
 clip_children = 2
 layout_mode = 1
 anchors_preset = 12
@@ -125,7 +125,7 @@ grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 1
 
-[node name="Dialogue" type="MarginContainer" parent="Balloon/Panel"]
+[node name="Dialogue" type="MarginContainer" parent="Balloon/Panel" unique_id=842173807]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -135,16 +135,16 @@ offset_right = 16.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Balloon/Panel/Dialogue"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Balloon/Panel/Dialogue" unique_id=582684583]
 layout_mode = 2
 
-[node name="DialogueLabel" parent="Balloon/Panel/Dialogue/VBoxContainer" instance=ExtResource("2_l2rj6")]
+[node name="DialogueLabel" parent="Balloon/Panel/Dialogue/VBoxContainer" unique_id=744535189 instance=ExtResource("2_l2rj6")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 text = "Dialogue..."
 
-[node name="Responses" type="MarginContainer" parent="Balloon"]
+[node name="Responses" type="MarginContainer" parent="Balloon" unique_id=554350327]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -158,7 +158,7 @@ offset_bottom = -116.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="ResponsesMenu" type="VBoxContainer" parent="Balloon/Responses" node_paths=PackedStringArray("response_template")]
+[node name="ResponsesMenu" type="VBoxContainer" parent="Balloon/Responses" unique_id=848750357 node_paths=PackedStringArray("response_template")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 8
@@ -166,7 +166,7 @@ theme_override_constants/separation = 2
 script = ExtResource("3_u7mce")
 response_template = NodePath("ResponseExample")
 
-[node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu"]
+[node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu" unique_id=275581222]
 layout_mode = 2
 text = "Response example"
 

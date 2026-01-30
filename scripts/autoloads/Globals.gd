@@ -8,6 +8,8 @@ var user_prefs: UserPrefs
 var settings_menu_scene: PackedScene = preload("res://scenes/menus/settings_menu.tscn")
 var settings_menu = null
 
+var can_player_move = true
+
 @warning_ignore("unused_signal")
 signal transfer_start
 @warning_ignore("unused_signal")
