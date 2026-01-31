@@ -1,5 +1,5 @@
 ~ start
-o_g1: Hiii, we haven't seen each other in so long!
+o_g1: Hiii, {{ Globals.player_name }}, we haven't seen each other in so long!
 o_b1: Where did you disappear to, we've been looking for you for so long, how are you?
 m: hello, I'm fine...
 o_g1: have you see the last episode of Strange and Happy?

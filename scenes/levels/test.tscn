@@ -12,12 +12,12 @@
 [ext_resource type="Script" uid="uid://bgm8n3pwwbymt" path="res://scripts/interaction_area.gd" id="6_n3tga"]
 [ext_resource type="Script" uid="uid://dp66ice2hhj8n" path="res://scripts/state_machine/state_machine.gd" id="7_k0nr3"]
 [ext_resource type="Script" uid="uid://cmc5vhgmy6nat" path="res://scripts/state_machine/states/state_interact.gd" id="8_q5hn5"]
-[ext_resource type="Texture2D" uid="uid://drlybqhgk4x4o" path="res://entities/npcs/chara - blackPerson.png" id="9_q5hn5"]
+[ext_resource type="Texture2D" uid="uid://xbmt22letatc" path="res://entities/npcs/chara - blackPerson.png" id="9_q5hn5"]
 [ext_resource type="Script" uid="uid://xbo7jkinrdw2" path="res://scripts/state_machine/states/state.gd" id="10_xu3m2"]
 [ext_resource type="Script" uid="uid://c6r5xohr5314y" path="res://components/target_manager.gd" id="12_3v4fd"]
 [ext_resource type="Resource" uid="uid://ccawn3m37qmnb" path="res://dialogues/commons.dialogue" id="15_v58u8"]
 [ext_resource type="Script" uid="uid://ccgjxk0s51hvy" path="res://scripts/state_machine/change_state_listener.gd" id="16_n3tga"]
-[ext_resource type="Resource" uid="uid://cmbox2hju8rto" path="res://dialogues/contain_yourself/beggining.dialogue" id="16_q5hn5"]
+[ext_resource type="Resource" uid="uid://i1xp4mkcdcfa" path="res://dialogues/contain_yourself/beggining.dialogue" id="16_q5hn5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3v4fd"]
 atlas = ExtResource("4_t3kmv")

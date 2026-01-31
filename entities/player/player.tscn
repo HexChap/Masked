@@ -13,7 +13,7 @@
 [ext_resource type="Script" uid="uid://ddifg1cabao3g" path="res://scripts/state_machine/states/state_idle.gd" id="8_bp05k"]
 [ext_resource type="Script" uid="uid://di3e8lyqvjft4" path="res://scripts/state_machine/states/state_props_setter.gd" id="9_fvq3l"]
 [ext_resource type="Script" uid="uid://btmy7sadqiuav" path="res://scripts/state_machine/states/state_animation.gd" id="9_p7spi"]
-[ext_resource type="Texture2D" uid="uid://bu6pcquenqnmk" path="res://entities/player/player.png" id="9_we0b7"]
+[ext_resource type="Texture2D" uid="uid://llo463wv5hx1" path="res://entities/player/player.png" id="9_we0b7"]
 [ext_resource type="Script" uid="uid://cmtmlyugkdwuh" path="res://scripts/state_machine/states/state_input_move.gd" id="11_we0b7"]
 [ext_resource type="Script" uid="uid://dlqmc36quropm" path="res://scripts/state_machine/input_data.gd" id="12_b2kln"]
 [ext_resource type="Script" uid="uid://b4jgftt0t4d1e" path="res://scripts/state_machine/states/state_impulse.gd" id="12_m3ydn"]

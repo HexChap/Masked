@@ -60,11 +60,15 @@ func save_game() -> void:
 	game_saved.emit()
 
 func _load_game_data():
-	if !get_file_data().game_data:
+	var game_data = get_file_data().game_data
+	if !game_data:
 		return
+		
 	var current_level = Globals.get_current_level()
-	if current_level and get_file_data().game_data.level != current_level.scene_file_path or !current_level:
+	if current_level and game_data.level_file_path != current_level.scene_file_path or !current_level:
 		Globals.load_last_saved_level()
+		
+	Globals.load_game_state()
 
 func _load_nodes_data():
 	for node: Node in _get_save_nodes():
@@ -104,7 +108,9 @@ func _save_game_data():
 
 func _get_game_data():
 	var game_data := DataGame.new()
-	game_data.level = Globals.get_current_level().scene_file_path
+	game_data.level_file_path = Globals.get_current_level().scene_file_path
+	game_data.reputation = Globals.reputation
+	game_data.player_name = Globals.player_name
 	return game_data
 
 func _get_save_nodes():

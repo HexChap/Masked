@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bvof4oabfgro8"]
 
 [ext_resource type="Script" uid="uid://d37ga3086e5x2" path="res://scripts/choose_name.gd" id="1_dyt6x"]
-[ext_resource type="Shader" uid="uid://dn31n5itiyl2y" path="res://shaders/blur.gdshader" id="2_dyt6x"]
+[ext_resource type="Shader" path="res://shaders/blur.gdshader" id="2_dyt6x"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_dyt6x"]
 shader = ExtResource("2_dyt6x")
@@ -44,7 +44,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer" unique_id=1169244986]
 layout_mode = 2
-text = "What shall be her name?"
+text = "What shall be his name?"
 
 [node name="TextEdit" type="TextEdit" parent="VBoxContainer/HBoxContainer/GridContainer" unique_id=1642907893]
 custom_minimum_size = Vector2(0, 38.53)
