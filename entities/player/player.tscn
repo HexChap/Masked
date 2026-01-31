@@ -302,6 +302,8 @@ health_controller = NodePath("HealthController")
 inventory = NodePath("Inventory")
 weapon = ExtResource("3_3wlsy")
 initial_facing = SubResource("Resource_3wlsy")
+max_speed = 150.0
+friction = 3000.0
 running_particles = NodePath("SmokeParticles")
 on_fall = NodePath("StateMachine/fall")
 

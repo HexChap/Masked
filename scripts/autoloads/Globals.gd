@@ -10,6 +10,9 @@ var settings_menu = null
 
 var can_player_move = true
 
+var player_name = "Rika"
+var reputation = 0
+
 @warning_ignore("unused_signal")
 signal transfer_start
 @warning_ignore("unused_signal")
@@ -65,6 +68,11 @@ func load_last_saved_level():
 	var level_to_load = DataManager.get_file_data().game_data.level
 	if level_to_load:
 		SceneManager.swap_scenes(level_to_load, get_tree().root, get_current_level(), Const.TRANSITION.FADE_TO_WHITE)
+
+func load_game_state():
+	var game_data = DataManager.get_file_data().game_data
+	reputation = game_data.reputation
+	player_name = game_data.player_name
 
 func get_node_inventory(node):
 	return node.inventory if node.get("inventory") else null
