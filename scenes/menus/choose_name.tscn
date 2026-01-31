@@ -12,10 +12,12 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 4.0
+offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_dyt6x")
-start_level = "uid://c7e8x6vv8rvxo"
+start_level = "uid://bvqge4co1cl2j"
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1728565997]
 material = SubResource("ShaderMaterial_dyt6x")
