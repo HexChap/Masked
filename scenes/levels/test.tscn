@@ -20,6 +20,8 @@
 [ext_resource type="Script" uid="uid://ccgjxk0s51hvy" path="res://scripts/state_machine/change_state_listener.gd" id="16_n3tga"]
 [ext_resource type="Resource" uid="uid://i1xp4mkcdcfa" path="res://dialogues/contain_yourself/beggining.dialogue" id="16_q5hn5"]
 [ext_resource type="Texture2D" uid="uid://cybvj1oo680p2" path="res://entities/npcs/chara - gayAss.png" id="20_67h3n"]
+[ext_resource type="Resource" uid="uid://borercpddmnfc" path="res://dialogues/start.dialogue" id="21_t3kmv"]
+[ext_resource type="Script" uid="uid://ckeoajh2lh4kd" path="res://scripts/state_machine/states/state_debug.gd" id="22_3v4fd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3v4fd"]
 atlas = ExtResource("4_t3kmv")
@@ -36,7 +38,7 @@ item = SubResource("Resource_t3kmv")
 quantity = 1
 metadata/_custom_type_script = "uid://b1smopidsigyw"
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_67h3n"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3v4fd"]
 resource_local_to_scene = true
 shader = ExtResource("3_k43ob")
 shader_parameter/flash_color = Color(1, 1, 1, 1)
@@ -202,7 +204,7 @@ region = Rect2(64, 64, 32, 32)
 atlas = ExtResource("9_q5hn5")
 region = Rect2(96, 64, 32, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_t3kmv"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_a7pk7"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -477,7 +479,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_n3tga"]
 radius = 28.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_3v4fd"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oqw1c"]
 resource_local_to_scene = true
 shader = ExtResource("3_k43ob")
 shader_parameter/flash_color = Color(1, 1, 1, 1)
@@ -547,7 +549,7 @@ region = Rect2(64, 64, 32, 32)
 atlas = ExtResource("20_67h3n")
 region = Rect2(96, 64, 32, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_a7pk7"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_woepd"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -812,7 +814,7 @@ animations = [{
 [node name="terrain" parent="Layers" index="0"]
 tile_map_data = PackedByteArray("AAAAAAAACgAAAAAAAAAAAAEACgAAAAAAAAAAAAIACgAAAAAAAAAAAAMACgAAAAAAAAAAAAQACgAAAAAAAAAAAAUACgAAAAAAAAAAAAYACgAAAAAAAAAAAAcACgAAAAAAAAAAAAgACgAAAAAAAAAAAAkACgAAAAAAAAAAAAoACgAAAAAAAAABAAAACgAAAAAAAAABAAEACgAAAAAAAAABAAIACgAAAAAAAAABAAMACgAAAAAAAAABAAQACgAAAAAAAAABAAUACgAAAAAAAAABAAYACgAAAAAAAAABAAcACgAAAAAAAAABAAgACgAAAAAAAAABAAkACgAAAAAAAAABAAoACgAAAAAAAAACAAAACgAAAAAAAAACAAEACgAAAAAAAAACAAIACgAAAAAAAAACAAMACgAAAAAAAAACAAQACgAAAAAAAAACAAUACgAAAAAAAAACAAYACgAAAAAAAAACAAcACgAAAAAAAAACAAgACgAAAAAAAAACAAkACgAAAAAAAAACAAoACgAAAAAAAAADAAAACgAAAAAAAAADAAEACgAAAAAAAAADAAIACgAAAAAAAAADAAMACgAAAAAAAAADAAQACgAAAAAAAAADAAUACgAAAAAAAAADAAYACgAAAAAAAAADAAcACgAAAAAAAAADAAgACgAAAAAAAAADAAkACgAAAAAAAAADAAoACgAAAAAAAAAEAAAACgAAAAAAAAAEAAEACgAAAAAAAAAEAAIACgAAAAAAAAAEAAMACgAAAAAAAAAEAAQACgAAAAAAAAAEAAUACgAAAAAAAAAEAAYACgAAAAAAAAAEAAcACgAAAAAAAAAEAAgACgAAAAAAAAAEAAkACgAAAAAAAAAEAAoACgAAAAAAAAAFAAAACgAAAAAAAAAFAAEACgAAAAAAAAAFAAIACgAAAAAAAAAFAAMACgAAAAAAAAAFAAQACgAAAAAAAAAFAAUACgAAAAAAAAAFAAYACgAAAAAAAAAFAAcACgAAAAAAAAAFAAgACgAAAAAAAAAFAAkACgAAAAAAAAAFAAoACgAAAAAAAAAGAAAACgAAAAAAAAAGAAEACgAAAAAAAAAGAAIACgAAAAAAAAAGAAMACgAAAAAAAAAGAAQACgAAAAAAAAAGAAUACgAAAAAAAAAGAAYACgAAAAAAAAAGAAcACgAAAAAAAAAGAAgACgAAAAAAAAAGAAkACgAAAAAAAAAGAAoACgAAAAAAAAAHAAAACgAAAAAAAAAHAAEACgAAAAAAAAAHAAIACgAAAAAAAAAHAAMACgAAAAAAAAAHAAQACgAAAAAAAAAHAAUACgAAAAAAAAAHAAYACgAAAAAAAAAHAAcACgAAAAAAAAAHAAgACgAAAAAAAAAHAAkACgAAAAAAAAAHAAoACgAAAAAAAAAIAAAACgAAAAAAAAAIAAEACgAAAAAAAAAIAAIACgAAAAAAAAAIAAMACgAAAAAAAAAIAAQACgAAAAAAAAAIAAUACgAAAAAAAAAIAAYACgAAAAAAAAAIAAcACgAAAAAAAAAIAAgACgAAAAAAAAAIAAkACgAAAAAAAAAIAAoACgAAAAAAAAAJAAAACgAAAAAAAAAJAAEACgAAAAAAAAAJAAIACgAAAAAAAAAJAAMACgAAAAAAAAAJAAQACgAAAAAAAAAJAAUACgAAAAAAAAAJAAYACgAAAAAAAAAJAAcACgAAAAAAAAAJAAgACgAAAAAAAAAJAAkACgAAAAAAAAAJAAoACgAAAAAAAAAKAAAACgAAAAAAAAAKAAEACgAAAAAAAAAKAAIACgAAAAAAAAAKAAMACgAAAAAAAAAKAAQACgAAAAAAAAAKAAUACgAAAAAAAAAKAAYACgAAAAAAAAAKAAcACgAAAAAAAAAKAAgACgAAAAAAAAAKAAkACgAAAAAAAAAKAAoACgAAAAAAAAALAAAACgAAAAAAAAALAAEACgAAAAAAAAALAAIACgAAAAAAAAALAAMACgAAAAAAAAALAAQACgAAAAAAAAALAAUACgAAAAAAAAALAAYACgAAAAAAAAALAAcACgAAAAAAAAALAAgACgAAAAAAAAALAAkACgAAAAAAAAALAAoACgAAAAAAAAAMAAAACgAAAAAAAAAMAAEACgAAAAAAAAAMAAIACgAAAAAAAAAMAAMACgAAAAAAAAAMAAQACgAAAAAAAAAMAAUACgAAAAAAAAAMAAYACgAAAAAAAAAMAAcACgAAAAAAAAAMAAgACgAAAAAAAAAMAAkACgAAAAAAAAAMAAoACgAAAAAAAAANAAAACgAAAAAAAAANAAEACgAAAAAAAAANAAIACgAAAAAAAAANAAMACgAAAAAAAAANAAQACgAAAAAAAAANAAUACgAAAAAAAAANAAYACgAAAAAAAAANAAcACgAAAAAAAAANAAgACgAAAAAAAAANAAkACgAAAAAAAAANAAoACgAAAAAAAAAOAAAACgAAAAAAAAAOAAEACgAAAAAAAAAOAAIACgAAAAAAAAAOAAMACgAAAAAAAAAOAAQACgAAAAAAAAAOAAUACgAAAAAAAAAOAAYACgAAAAAAAAAOAAcACgAAAAAAAAAOAAgACgAAAAAAAAAOAAkACgAAAAAAAAAOAAoACgAAAAAAAAAPAAAACgAAAAAAAAAPAAEACgAAAAAAAAAPAAIACgAAAAAAAAAPAAMACgAAAAAAAAAPAAQACgAAAAAAAAAPAAUACgAAAAAAAAAPAAYACgAAAAAAAAAPAAcACgAAAAAAAAAPAAgACgAAAAAAAAAPAAkACgAAAAAAAAAPAAoACgAAAAAAAAAQAAAACgAAAAAAAAAQAAEACgAAAAAAAAAQAAIACgAAAAAAAAAQAAMACgAAAAAAAAAQAAQACgAAAAAAAAAQAAUACgAAAAAAAAAQAAYACgAAAAAAAAAQAAcACgAAAAAAAAAQAAgACgAAAAAAAAAQAAkACgAAAAAAAAAQAAoACgAAAAAAAAARAAAACgAAAAAAAAARAAEACgAAAAAAAAARAAIACgAAAAAAAAARAAMACgAAAAAAAAARAAQACgAAAAAAAAARAAUACgAAAAAAAAARAAYACgAAAAAAAAARAAcACgAAAAAAAAARAAgACgAAAAAAAAARAAkACgAAAAAAAAARAAoACgAAAAAAAAASAAAACgAAAAAAAAASAAEACgAAAAAAAAASAAIACgAAAAAAAAASAAMACgAAAAAAAAASAAQACgAAAAAAAAASAAUACgAAAAAAAAASAAYACgAAAAAAAAASAAcACgAAAAAAAAASAAgACgAAAAAAAAASAAkACgAAAAAAAAASAAoACgAAAAAAAAATAAAACgAAAAAAAAATAAEACgAAAAAAAAATAAIACgAAAAAAAAATAAMACgAAAAAAAAATAAQACgAAAAAAAAATAAUACgAAAAAAAAATAAYACgAAAAAAAAATAAcACgAAAAAAAAATAAgACgAAAAAAAAATAAkACgAAAAAAAAATAAoACgAAAAAAAAA=")
 
-[node name="Chest" parent="Props" index="0" unique_id=1300011948 instance=ExtResource("2_k0nr3")]
+[node name="Chest" parent="Props" index="0" unique_id=1300011948 groups=["save"] instance=ExtResource("2_k0nr3")]
 position = Vector2(198, 135)
 contents = Array[ExtResource("3_v58u8")]([SubResource("Resource_3v4fd")])
 
@@ -821,9 +823,6 @@ autoplay = &"idle"
 
 [node name="InteractionArea" parent="Props/Chest" index="2"]
 metadata/_custom_type_script = "uid://bgm8n3pwwbymt"
-
-[node name="StateMachine" parent="Props/Chest" index="3"]
-debug = true
 
 [node name="call_get_contents" parent="Props/Chest/StateMachine" index="2"]
 metadata/_custom_type_script = "uid://dd2m5xedjwd4m"
@@ -834,12 +833,12 @@ dialogue = ExtResource("15_v58u8")
 title = "test2"
 metadata/_custom_type_script = "uid://cwq4nm0vsv1l5"
 
-[node name="CharaBlack" parent="Entities" index="0" unique_id=1783602494 instance=ExtResource("2_wu1oq")]
+[node name="CharaBlack" parent="Entities" index="0" unique_id=1783602494 groups=["save"] instance=ExtResource("2_wu1oq")]
 position = Vector2(64, 120)
 
 [node name="AnimatedSprite2D" parent="Entities/CharaBlack" index="2" unique_id=927983283]
-material = SubResource("ShaderMaterial_67h3n")
-sprite_frames = SubResource("SpriteFrames_t3kmv")
+material = SubResource("ShaderMaterial_3v4fd")
+sprite_frames = SubResource("SpriteFrames_a7pk7")
 
 [node name="InteractionArea" type="Area2D" parent="Entities/CharaBlack" index="7" unique_id=1107224786]
 z_index = -1
@@ -852,7 +851,7 @@ metadata/_custom_type_script = "uid://bgm8n3pwwbymt"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Entities/CharaBlack/InteractionArea" index="0" unique_id=317821476]
 shape = SubResource("CircleShape2D_n3tga")
 
-[node name="StateMachine" type="Node" parent="Entities/CharaBlack" index="8" unique_id=531607778 node_paths=PackedStringArray("current_state")]
+[node name="StateMachine" type="Node" parent="Entities/CharaBlack" index="8" unique_id=531607778 node_paths=PackedStringArray("current_state") groups=["save"]]
 script = ExtResource("7_k0nr3")
 current_state = NodePath("interact")
 debug = true
@@ -864,12 +863,24 @@ action_trigger = "interact"
 one_shot = false
 on_completion = [NodePath("../foo")]
 
-[node name="foo" type="Node" parent="Entities/CharaBlack/StateMachine" index="1" unique_id=656335377 node_paths=PackedStringArray("on_completion")]
+[node name="foo" type="Node" parent="Entities/CharaBlack/StateMachine" index="1" unique_id=656335377]
 script = ExtResource("10_xu3m2")
-on_completion = [NodePath("../interact")]
 metadata/_custom_type_script = "uid://xbo7jkinrdw2"
 
-[node name="TargetManager" type="Node2D" parent="Entities/CharaBlack" index="11" unique_id=474786709]
+[node name="Debug" type="Node" parent="Entities/CharaBlack/StateMachine" index="2" unique_id=320820504]
+script = ExtResource("22_3v4fd")
+metadata/_custom_type_script = "uid://ckeoajh2lh4kd"
+
+[node name="ChangeStateListener" type="Node2D" parent="Entities/CharaBlack" index="9" unique_id=466945713 node_paths=PackedStringArray("listen_to")]
+position = Vector2(-64, -120)
+script = ExtResource("16_n3tga")
+listen_to = NodePath("../../ContainYourself")
+change_states = Dictionary[String, String]({
+"foo": "Debug"
+})
+metadata/_custom_type_script = "uid://ccgjxk0s51hvy"
+
+[node name="TargetManager" type="Node2D" parent="Entities/CharaBlack" index="12" unique_id=474786709]
 script = ExtResource("12_3v4fd")
 target_player_id = 1
 
@@ -932,8 +943,8 @@ metadata/_custom_type_script = "uid://ccgjxk0s51hvy"
 position = Vector2(318, 109)
 
 [node name="AnimatedSprite2D" parent="Entities/GayAssChara" index="2" unique_id=927983283]
-material = SubResource("ShaderMaterial_3v4fd")
-sprite_frames = SubResource("SpriteFrames_a7pk7")
+material = SubResource("ShaderMaterial_oqw1c")
+sprite_frames = SubResource("SpriteFrames_woepd")
 
 [node name="InteractionArea" type="Area2D" parent="Entities/GayAssChara" index="7" unique_id=1010893748]
 z_index = -1
@@ -946,7 +957,7 @@ metadata/_custom_type_script = "uid://bgm8n3pwwbymt"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Entities/GayAssChara/InteractionArea" index="0" unique_id=1872875356]
 shape = SubResource("CircleShape2D_n3tga")
 
-[node name="StateMachine" type="Node" parent="Entities/GayAssChara" index="8" unique_id=2002803715 node_paths=PackedStringArray("current_state")]
+[node name="StateMachine" type="Node" parent="Entities/GayAssChara" index="8" unique_id=2002803715 node_paths=PackedStringArray("current_state") groups=["save"]]
 script = ExtResource("7_k0nr3")
 current_state = NodePath("interact")
 debug = true
@@ -955,13 +966,17 @@ debug = true
 script = ExtResource("8_q5hn5")
 interaction_area = NodePath("../../InteractionArea")
 action_trigger = "interact"
-one_shot = false
-on_completion = [NodePath("../foo")]
+on_completion = [NodePath("../start_dialogue")]
 
-[node name="foo" type="Node" parent="Entities/GayAssChara/StateMachine" index="1" unique_id=485331766 node_paths=PackedStringArray("on_completion")]
-script = ExtResource("10_xu3m2")
-on_completion = [NodePath("../interact")]
-metadata/_custom_type_script = "uid://xbo7jkinrdw2"
+[node name="start_dialogue" type="Node" parent="Entities/GayAssChara/StateMachine" index="1" unique_id=689900368 node_paths=PackedStringArray("on_completion")]
+script = ExtResource("6_v58u8")
+dialogue = ExtResource("21_t3kmv")
+title = "forest_citizen_talk"
+on_completion = [NodePath("../Debug")]
+
+[node name="Debug" type="Node" parent="Entities/GayAssChara/StateMachine" index="2" unique_id=393271027]
+script = ExtResource("22_3v4fd")
+metadata/_custom_type_script = "uid://ckeoajh2lh4kd"
 
 [node name="TargetManager" type="Node2D" parent="Entities/GayAssChara" index="11" unique_id=929210800]
 script = ExtResource("12_3v4fd")

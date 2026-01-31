@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://3fbtmqxvme3p"]
 
-[ext_resource type="Script" uid="uid://dwymt7ly84fxp" path="res://scripts/escape_menu.gd" id="1_gd77m"]
-[ext_resource type="Shader" uid="uid://8krfqt44of0r" path="res://shaders/colored_noise.gdshader" id="2_gd77m"]
+[ext_resource type="Script" path="res://scripts/escape_menu.gd" id="1_gd77m"]
+[ext_resource type="Shader" path="res://shaders/colored_noise.gdshader" id="2_gd77m"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vh76n"]
 shader = ExtResource("2_gd77m")

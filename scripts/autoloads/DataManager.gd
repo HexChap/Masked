@@ -64,7 +64,7 @@ func _load_game_data():
 	if !game_data:
 		return
 		
-	var current_level = Globals.get_current_level()
+	var current_level = Globals.get_current_scene()
 	if current_level and game_data.level_file_path != current_level.scene_file_path or !current_level:
 		Globals.load_last_saved_level()
 		

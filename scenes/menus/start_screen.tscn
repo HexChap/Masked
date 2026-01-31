@@ -1146,7 +1146,7 @@ shadow_color = Color(0, 0, 0, 0.360784)
 shadow_size = 1
 shadow_offset = Vector2(1, 1)
 
-[node name="StartScreen" type="Control" unique_id=1067469992]
+[node name="StartScreen" type="Control" unique_id=1067469992 groups=["level"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

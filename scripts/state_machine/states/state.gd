@@ -38,6 +38,7 @@ func enable(params = null, sender = null): ## Enables this state.
 	if params:
 		state_machine.params = params
 	state_machine.enable_state(self, sender)
+	print(self.name, ": enabled")
 	if delay_completion > Vector2.ZERO:
 		await _start_timer(delay_completion).timeout
 		_enable_on_completion(params)

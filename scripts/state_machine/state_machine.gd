@@ -116,12 +116,14 @@ func _handle_input_states(event):
 func receive_data(data: DataState):
 	if data:
 		var state_node: State = get_child(data.state_index)
+		print(state_node.name)
 		state_node.enable(params)
 
 ## Get the state machine data to save.
 func get_data() -> DataState:
 	var data = DataState.new()
 	data.state_index = current_state.get_index()
+	print("getting: ", current_state.name)
 	return data
 
 func enable_state_by_name(state_name: String):

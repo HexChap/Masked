@@ -18,7 +18,6 @@ func _on_settings_button_up() -> void:
 	Globals.open_settings_menu()
 
 func _on_quit_button_up() -> void:
-	_on_save_button_up()
 	get_tree().quit()
 
 func _on_save_button_up() -> void:
