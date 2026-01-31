@@ -1,11 +1,23 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+Should I go to the cool group or to my old friends?
+- Cool guys
+	*goes to the new group*
+	I want to be one of them, I need it
+	{{ Globals.player_name }}: Hey guys, what're you doing?
+	Ilya: Hi, what do you want?
+	{{ Globals.player_name }}: Nothing, just to chat a little
+	{{ Globals.player_name }}: Is something wrong?
+	Eloise: We're busy, can't you see?
+	But you're just taking selfies?
+	Lara: Yeah, we are really busy, can't you go? 
+	Lara: You're blocking the sunlight
+	WHAT THE FUCK?
+	{{ Globals.player_name }}: Did I do something wrong?
+	Ilya: Nah, we're just not in the mood for talking to you
+	Eloise: We'll see you around
+	*leaves* 
+	What did just happen?
+	Did they left me?
+	*sees old friends*
+- Old friends
 => END

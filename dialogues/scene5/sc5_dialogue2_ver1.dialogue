@@ -1,11 +1,17 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+What am I gonna say?
+{{ Globals.player_name }}: Hi guys, what's new?
+Amanda: Heey, not much, just discussing going to this new quest place on Saturdayy
+Is it that easy?
+{{ Globals.player_name }}: Is it finally opened? 
+{{ Globals.player_name }}: It took them so much time to make it happen
+Amanda: YESS!!
+Steve: Wanna come? I know that you have other friends but...
+{{ Globals.player_name }}: Yes, I'll come
+Steve: ...Really?
+{{ Globals.player_name }}: Yeah, guys, listen, I wanna apologise, I've been mean to you recently and I....
+Amanda: That's okay, we understand, don't explain yourself
+{{ Globals.player_name }}: Thank you, guys
+Steve: So, Saturday...
+I will be fine here too
 => END
