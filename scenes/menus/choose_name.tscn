@@ -1,12 +1,11 @@
 [gd_scene format=3 uid="uid://bvof4oabfgro8"]
 
 [ext_resource type="Script" uid="uid://d37ga3086e5x2" path="res://scripts/choose_name.gd" id="1_dyt6x"]
-[ext_resource type="Shader" uid="uid://8krfqt44of0r" path="res://shaders/colored_noise.gdshader" id="1_jhwjb"]
+[ext_resource type="Shader" uid="uid://dn31n5itiyl2y" path="res://shaders/blur.gdshader" id="2_dyt6x"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_dyt6x"]
-shader = ExtResource("1_jhwjb")
-shader_parameter/color_hielo = Color(0.21271664, 0.44780463, 0.46094757, 1)
-shader_parameter/color_fuego = Color(0.41, 0, 0, 1)
+shader = ExtResource("2_dyt6x")
+shader_parameter/offset = 0.0
 
 [node name="ChooseName" type="Control" unique_id=1757157169]
 layout_mode = 3
