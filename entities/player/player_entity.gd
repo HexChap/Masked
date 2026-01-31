@@ -62,3 +62,7 @@ func disable_entity(value: bool, delay = 0.0):
 	await get_tree().create_timer(delay).timeout
 	stop()
 	input_enabled = !value
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("settings"):
+		Globals.open_settings_menu()
