@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://3fbtmqxvme3p"]
+
+[ext_resource type="Script" uid="uid://dwymt7ly84fxp" path="res://scripts/escape_menu.gd" id="1_gd77m"]
+[ext_resource type="Shader" uid="uid://8krfqt44of0r" path="res://shaders/colored_noise.gdshader" id="2_gd77m"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vh76n"]
+shader = ExtResource("2_gd77m")
+shader_parameter/color_hielo = Color(0, 1, 1, 1)
+shader_parameter/color_fuego = Color(0.41, 0, 0, 1)
+
+[node name="Escape" type="CanvasLayer" unique_id=1473581823 groups=["global_escape_menu"]]
+layer = 5
+script = ExtResource("1_gd77m")
+
+[node name="Escape" type="Control" parent="." unique_id=115663730]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Escape" unique_id=734688445]
+material = SubResource("ShaderMaterial_vh76n")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Escape" unique_id=364948418]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Escape/VBoxContainer" unique_id=255487058]
+layout_mode = 2
+alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="Escape/VBoxContainer/HBoxContainer" unique_id=906237327]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Escape/VBoxContainer/HBoxContainer/GridContainer" unique_id=1030865459]
+layout_mode = 2
+
+[node name="Continue" type="Button" parent="Escape/VBoxContainer/HBoxContainer/GridContainer" unique_id=160790771]
+layout_mode = 2
+text = "Continue"
+
+[node name="Save" type="Button" parent="Escape/VBoxContainer/HBoxContainer/GridContainer" unique_id=1328017238]
+layout_mode = 2
+text = "Save"
+
+[node name="Settings" type="Button" parent="Escape/VBoxContainer/HBoxContainer/GridContainer" unique_id=1735645652]
+layout_mode = 2
+text = "Settings"
+
+[node name="Quit" type="Button" parent="Escape/VBoxContainer/HBoxContainer/GridContainer" unique_id=1276211126]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="button_up" from="Escape/VBoxContainer/HBoxContainer/GridContainer/Continue" to="." method="_on_continue_button_up"]
+[connection signal="button_up" from="Escape/VBoxContainer/HBoxContainer/GridContainer/Save" to="." method="_on_save_button_up"]
+[connection signal="button_up" from="Escape/VBoxContainer/HBoxContainer/GridContainer/Settings" to="." method="_on_settings_button_up"]
+[connection signal="button_up" from="Escape/VBoxContainer/HBoxContainer/GridContainer/Quit" to="." method="_on_quit_button_up"]

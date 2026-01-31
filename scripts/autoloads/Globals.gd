@@ -8,6 +8,10 @@ var user_prefs: UserPrefs
 var settings_menu_scene: PackedScene = preload("res://scenes/menus/settings_menu.tscn")
 var settings_menu = null
 
+var escape_menu_scene: PackedScene = preload("res://scenes/menus/escape.tscn")
+var escape_menu = null
+
+
 var can_player_move = true
 
 var player_name = "Rika"
@@ -43,6 +47,13 @@ func open_settings_menu():
 		get_tree().root.add_child(settings_menu)
 	else:
 		push_warning('settings menu already exists in this scene')
+
+func open_escape_menu():
+	if get_tree().get_nodes_in_group("global_escape_menu").size() > 0:
+		push_warning("A global menu is already open.")
+		return
+	var new_menu = escape_menu_scene.instantiate()
+	get_tree().root.add_child(new_menu)
 
 func get_player(id: int):
 	var players = get_players()

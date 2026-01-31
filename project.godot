@@ -64,6 +64,7 @@ player=""
 save=""
 level=""
 destination=""
+global_escape_menu=""
 
 [importer_defaults]
 

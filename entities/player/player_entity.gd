@@ -65,4 +65,4 @@ func disable_entity(value: bool, delay = 0.0):
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("settings"):
-		Globals.open_settings_menu()
+		Globals.open_escape_menu()

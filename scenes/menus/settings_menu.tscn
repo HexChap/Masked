@@ -22,6 +22,7 @@ bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="SettingsMenu" type="CanvasLayer" unique_id=1020711291]
 process_mode = 2
+layer = 10
 script = ExtResource("1_ky16d")
 
 [node name="Panel" type="Panel" parent="." unique_id=1456331624]
