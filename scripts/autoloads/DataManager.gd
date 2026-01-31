@@ -91,6 +91,14 @@ func save_player_data(player_id: int, data: Dictionary):
 	if player_data:
 		for key in data.keys():
 			player_data[key] = data[key]
+			
+func save_player_name(player_id: int, name: String):
+	var player_data: DataPlayer = get_player_data(player_id)
+	player_data.name = name
+
+func get_player_name(player_id: int):
+	var player_data: DataPlayer = get_player_data(player_id)
+	return player_data.name
 
 func _save_game_data():
 	get_file_data().game_data = _get_game_data()
