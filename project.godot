@@ -32,6 +32,7 @@ SceneManager="*res://scripts/autoloads/SceneManager.gd"
 DataManager="*res://scripts/autoloads/DataManager.gd"
 Debugger="*res://scripts/autoloads/debugger.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+DialoguePoints="*uid://bari7oq6bm52m"
 
 [dialogue_manager]
 

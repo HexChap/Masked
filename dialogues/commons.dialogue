@@ -5,3 +5,14 @@ Key needed. [ID:KEY_NEEDED_DF895F]
 ~ chest_content
 Contents found. [ID:CONTENTS_FOUND_A9FEC0]
 => END
+
+~ test
+bleh {{Globals.reputation}}
+=> END
+
+~ test2
+if Globals.reputation < 0:
+	They probably hate me now...
+else:
+	Yea we chillin
+=> END

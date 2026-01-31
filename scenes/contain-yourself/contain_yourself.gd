@@ -43,6 +43,7 @@ func _on_timer_timeout() -> void:
 	# lose
 	if $TextureProgressBar.value <= 0.0:
 		end_game()
+		Globals.reputation -= 1
 		%StateMachine.disable_state(%StateMachine.current_state)
 		%StateMachine.enable_state_by_name("foo")
 		contain_yourself_lose.emit()
