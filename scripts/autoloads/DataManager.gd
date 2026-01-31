@@ -93,9 +93,8 @@ func save_player_data(player_id: int, data: Dictionary):
 			player_data[key] = data[key]
 			
 func save_player_name(player_id: int, name: String):
-	var player_data: DataPlayer = get_player_data(player_id)
-	player_data.name = name
-
+	save_player_data(player_id, {name: name})
+	
 func get_player_name(player_id: int):
 	var player_data: DataPlayer = get_player_data(player_id)
 	return player_data.name

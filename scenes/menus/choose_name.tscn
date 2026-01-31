@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://bvof4oabfgro8"]
+
+[ext_resource type="Script" uid="uid://d37ga3086e5x2" path="res://scripts/choose_name.gd" id="1_dyt6x"]
+[ext_resource type="Shader" uid="uid://8krfqt44of0r" path="res://shaders/colored_noise.gdshader" id="1_jhwjb"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dyt6x"]
+shader = ExtResource("1_jhwjb")
+shader_parameter/color_hielo = Color(0.21271664, 0.44780463, 0.46094757, 1)
+shader_parameter/color_fuego = Color(0.41, 0, 0, 1)
+
+[node name="ChooseName" type="Control" unique_id=1757157169]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dyt6x")
+start_level = "uid://c7e8x6vv8rvxo"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1728565997]
+material = SubResource("ShaderMaterial_dyt6x")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1218324066]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=739081958]
+layout_mode = 2
+alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/HBoxContainer" unique_id=71124817]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer" unique_id=1169244986]
+layout_mode = 2
+text = "What shall be her name?"
+
+[node name="TextEdit" type="TextEdit" parent="VBoxContainer/HBoxContainer/GridContainer" unique_id=1642907893]
+custom_minimum_size = Vector2(0, 38.53)
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "here..."
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/GridContainer" unique_id=429937966]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer/GridContainer/HBoxContainer" unique_id=1336429866]
+custom_minimum_size = Vector2(76.19, 29.41)
+layout_mode = 2
+text = "Continue"
+
+[connection signal="button_up" from="VBoxContainer/HBoxContainer/GridContainer/HBoxContainer/Button" to="." method="_on_button_button_up"]

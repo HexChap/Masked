@@ -1,6 +1,12 @@
 [gd_scene format=4 uid="uid://dayefv6yyr2we"]
 
 [ext_resource type="Script" uid="uid://cyncm32qdovi5" path="res://scripts/start_screen.gd" id="1_flm04"]
+[ext_resource type="Shader" uid="uid://8krfqt44of0r" path="res://shaders/colored_noise.gdshader" id="2_njl8u"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ec65r"]
+shader = ExtResource("2_njl8u")
+shader_parameter/color_hielo = Color(0.21271664, 0.44780463, 0.46094757, 1)
+shader_parameter/color_fuego = Color(0.41, 0, 0, 1)
 
 [sub_resource type="Image" id="Image_76tfe"]
 data = {
@@ -1148,7 +1154,16 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_flm04")
-start_level = "uid://c7e8x6vv8rvxo"
+start_level = "uid://bvof4oabfgro8"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=142631020]
+material = SubResource("ShaderMaterial_ec65r")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1153129199]
 layout_mode = 1
