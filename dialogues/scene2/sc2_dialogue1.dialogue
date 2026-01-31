@@ -1,35 +1,35 @@
 ~ start
-b2: ...yeah and then he tripped over my leg, fell and broke his nose hahaha
-g1: Look, over there, aren't those your former friends?
+Ilya: ...yeah and then he tripped over my leg, fell and broke his nose hahaha
+Lara: Look, over there, aren't those your former friends?
 Oh, fuck!
-m: Yes, that's them
-m: Don't pay them any attention 
-g2: No worries, they're not worth our attention
-b1: Those were them? They look like complete losers
-b1: Of course you ran away from them! 
+{{ Globals.player_name }}: Yes, that's them
+{{ Globals.player_name }}: Don't pay them any attention 
+Eloise: No worries, they're not worth our attention
+Ilya: Those were them? They look like complete losers
+Ilya: Of course you ran away from them! 
 - They're not that bad
-  b2: You sure? They look really stupid
+  Lara: You sure? They look really stupid
   They don't even know them.
   - It's not their fault
   - Don't talk about them like that 
-  b2: Sure, but you ran away from them!
+  Lara: Sure, but you ran away from them!
   I didn't run away...I think so at least
   - They're not guilty because of me wanting something better
   - They've done nothing wrong 
-  g1: We got it, you're protecting your little old friends, relax!
+  Eloise: We got it, you're protecting your little old friends, relax!
   Am I really protecting them?
   - That's fine
-    b2: So, what I was saying... 
+    Ilya: So, what I was saying... 
   - I'm not protecting them, just saying
-    g1: So, you agree that they're losers!
-    g1: Moving on...
+    Eloise: So, you agree that they're losers!
+    Eloise: Moving on...
 - Yeah, there's that
-  b1: That's why you ran away from them? I see!
+  Lara: That's why you ran away from them? I see!
   Did I really run away?
   - Yeah, I couldn't stand them anymore...
-    g2: Right? You're fine now, you're with us
-    b2: Yeah, there's nothing to worry about 
+    Lara: Right? You're fine now, you're with us
+    Ilya: Yeah, there's nothing to worry about 
   - We wanted different things and that's all
-    g2: Good people always say that, we got you! 
-    b1: Don't worry about them
+    Lara: Good people always say that, we got you! 
+    Ilya: Don't worry about them
 => END

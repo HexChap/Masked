@@ -1,10 +1,10 @@
 ~ start
 Okay, I'm fine, I can do it
-m: I don't know, we'll see, maybe
-o_b: Okay, I'll text you tomorrow so we can figure it out!
+{{ Globals.player_name }}: I don't know, we'll see, maybe
+Steve: Okay, I'll text you tomorrow so we can figure it out!
 *The bell rings*
 Thank God!
-m: I have to go, I'll see you later 
-o_b: bye
-o_g: bye!!
+{{ Globals.player_name }}: I have to go, I'll see you later 
+Steve: bye
+Amanda: bye!!
 => END

@@ -1,9 +1,9 @@
 ~ start
-m: No, I haven't managed to watch it yet, I was busy
-o_g: Oh wow..then sorry for the spoilers 
-o_b: You just ruined the experience for him
-o_b: And speaking of experience, there's an update for Boys and Buses
-o_b: Do you want to get together this weekend to play it? 
+{{ Globals.player_name }}: No, I haven't managed to watch it yet, I was busy
+Amanda: Oh wow..then sorry for the spoilers 
+Steve: You just ruined the experience for him
+Steve: And speaking of experience, there's an update for Boys and Buses
+Steve: Do you want to get together this weekend to play it? 
 They're talking too much. All that stupid noise for nothing.
 [shake rate=20 level=10]Ridiculous, slow, naive...[/shake]
 => END

@@ -1,0 +1,20 @@
+~ start
+Maybe I wasn't right
+I should apologise
+*goes to the old group*
+{{ Globals.player_name }}: Hey guys, what's new?
+Amanda: Nothing
+{{ Globals.player_name }}: Are you okay?
+Steve: Yeah, we're fine
+{{ Globals.player_name }}: Okay...Wanna go out this weekend? I saw that this new quest place is openn
+Amanda: Go out with your new friends
+{{ Globals.player_name }}: Sorry?
+Steve: You heard her, we have nothing to do with you
+Amanda: You should leave
+{{ Globals.player_name }}: Why? What happened?
+Amanda: Your cool friends told us what you were saying behind our backs
+: We were of a better opinion about you
+m: Guys, I'm so sorry, I didn't mean it, I...
+o_b: Please, leave
+[shake rate=20 level=10]wHAT HAVE I DONE?[/shake]
+=> END
