@@ -1,18 +1,18 @@
 ~ start
-Ilya:[happy] ...yeah and then he tripped over my leg, fell and broke his nose hahaha
+Ilya: [happy] ...yeah and then he tripped over my leg, fell and broke his nose hahaha
 Lara: Look, over there, aren't those your former friends?
 Oh, fuck!
 {{ Globals.player_name }}: Yes, that's them
 {{ Globals.player_name }}: Don't pay them any attention 
-Eloise:[happy] No worries, they're not worth our attention
-Ilya:[happy] Those were them? They look like complete losers
-Ilya:[happy] Of course you ran away from them! 
+Eloise: [happy] No worries, they're not worth our attention
+Ilya: [happy] Those were them? They look like complete losers
+Ilya: [happy] Of course you ran away from them! 
 - They're not that bad
-  Lara:[mad] You sure? They look really stupid
+  Lara: [mad] You sure? They look really stupid
   They don't even know them.
   - It's not their fault
   - Don't talk about them like that 
-  Lara:[happy] Sure, but you ran away from them!
+  Lara: [happy] Sure, but you ran away from them!
   I didn't run away...I think so at least
   - They're not guilty because of me wanting something better
   - They've done nothing wrong 
@@ -21,15 +21,15 @@ Ilya:[happy] Of course you ran away from them!
   - That's fine
     Ilya: So, what I was saying... 
   - I'm not protecting them, just saying
-    Eloise:[happy] So, you agree that they're losers!
+    Eloise: [happy] So, you agree that they're losers!
     Eloise: Moving on...
 - Yeah, there's that
-  Lara:[happy] That's why you ran away from them? I see!
+  Lara: [happy] That's why you ran away from them? I see!
   Did I really run away?
   - Yeah, I couldn't stand them anymore...
-    Lara:[happy] Right? You're fine now, you're with us
-    Ilya:[happy] Yeah, there's nothing to worry about 
+    Lara: [happy] Right? You're fine now, you're with us
+    Ilya: [happy] Yeah, there's nothing to worry about 
   - We wanted different things and that's all
-    Lara:[happy] Good people always say that, we got you! 
-    Ilya:[happy] Don't worry about them
+    Lara: [happy] Good people always say that, we got you! 
+    Ilya: [happy] Don't worry about them
 => END

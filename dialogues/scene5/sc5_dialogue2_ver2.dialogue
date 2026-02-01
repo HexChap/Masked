@@ -7,14 +7,14 @@ Amanda: Nothing.
 {{ Globals.player_name }}: Are you okay?
 Steve: Yeah, we're fine.
 {{ Globals.player_name }}: Okay...Wanna go out this weekend? I saw that this new quest place is open.n
-Amanda:[mad] Go out with your new friends.
+Amanda: [mad] Go out with your new friends.
 {{ Globals.player_name }}: Sorry?
-Steve:[mad] You heard her, we have nothing to do with you.
-Amanda:[mad] You should leave.
+Steve: [mad] You heard her, we have nothing to do with you.
+Amanda: [mad] You should leave.
 {{ Globals.player_name }}: Why? What happened?
-Amanda:[mad] Your cool friends told us what you were saying behind our backs.
-Steve:[mad] We were of a better opinion about you.
+Amanda: [mad] Your cool friends told us what you were saying behind our backs.
+Steve: [mad] We were of a better opinion about you.
 {{ Globals.player_name }}: Guys, I'm so sorry, I didn't mean it, I...
-Steve:[mad] Please, leave.
+Steve: [mad] Please, leave.
 [shake rate=20 level=10]wHAT HAVE I DONE?[/shake]
 => END

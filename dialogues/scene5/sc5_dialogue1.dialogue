@@ -7,12 +7,12 @@ Should I go to the cool group or to my old friends?
 	Ilya: Hi, what do you want?
 	{{ Globals.player_name }}: Nothing, just to chat a little
 	{{ Globals.player_name }}: Is something wrong?
-	Eloise:[mad] We're busy, can't you see?
+	Eloise: [mad] We're busy, can't you see?
 	But you're just taking selfies?
-	Lara:[mad] Yeah, we are really busy, can't you go? 
-	Lara:[mad] You're blocking the sunlight
+	Lara: [mad] Yeah, we are really busy, can't you go? 
+	Lara: [mad] You're blocking the sunlight
 	WHAT THE FUCK?
-	{{ Globals.player_name }}:[mad] Did I do something wrong?
+	{{ Globals.player_name }}: [mad] Did I do something wrong?
 	Ilya: Nah, we're just not in the mood for talking to you
 	Eloise: We'll see you around
 	*leaves* 

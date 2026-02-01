@@ -1,6 +1,6 @@
 ~ start
 Eloise: Why do you look so sad?
-Eloise:[happy] Smile, life is beautiful when you don't care about anyone
+Eloise: [happy] Smile, life is beautiful when you don't care about anyone
 Would it be that beautiful?
 - I'm fine, just tired
 - Yeah, it is..
@@ -10,6 +10,6 @@ I'm so tired from these interactions
 Lara: Well, okay, if you want to
 {{ Globals.player_name }}: Bye, guys
 *leaves*
-Eloise:[mad] He's strange, isn't he?
-Ilya:[mad] Yeah, he is
+Eloise: [mad] He's strange, isn't he?
+Ilya: [mad] Yeah, he is
 => END
