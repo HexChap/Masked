@@ -15,7 +15,7 @@ var escape_menu = null
 var can_player_move = true
 
 var player_name = "Rika"
-var reputation = -2
+var reputation = 0
 
 @warning_ignore("unused_signal")
 signal transfer_start
