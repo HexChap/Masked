@@ -21,7 +21,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="Godot 2D Top-Down Template"
 config/version="1.8.0"
 config/tags=PackedStringArray("template")
-run/main_scene="res://scenes/menus/start_screen.tscn"
+run/main_scene="uid://dayefv6yyr2we"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="uid://cvnvko43mnhfy"
 

@@ -35,7 +35,7 @@ metadata/_custom_type_script = "uid://cwq4nm0vsv1l5"
 [node name="change_bg" type="Node" parent="StateMachine" index="2" unique_id=733155660 node_paths=PackedStringArray("node", "on_completion")]
 script = ExtResource("6_kx5ri")
 node = NodePath("../..")
-method_name = "change_background1"
+method_name = "change_background"
 send_statemachine_params = false
 on_completion = [NodePath("../dialogue_pt2")]
 metadata/_custom_type_script = "uid://dd2m5xedjwd4m"
