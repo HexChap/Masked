@@ -4,11 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://ddaw38fil6bh3" path="res://tilesets/grounds_s.png" id="2_u4kl8"]
 [ext_resource type="Texture2D" uid="uid://chrm58tlk382y" path="res://tilesets/vsichko.png" id="3_yqrcl"]
 [ext_resource type="Texture2D" uid="uid://cjobx3psyi4kl" path="res://tilesets/trees.png" id="4_d2s5h"]
-[ext_resource type="Texture2D" uid="uid://brptq0mop4p2x" path="res://tilesets/basketball_net.png" id="5_mnm8f"]
-[ext_resource type="Texture2D" uid="uid://cbkdbyi2c8cat" path="res://tilesets/igrishta_fence_middle.png" id="6_004r4"]
-[ext_resource type="Texture2D" uid="uid://cd2i4qn1tvrel" path="res://tilesets/igrishta_fence_top.png" id="7_rt0s2"]
-[ext_resource type="Texture2D" uid="uid://bqpn2m8qnb0a0" path="res://tilesets/igrishta_fence_corner.png" id="8_f66mj"]
-[ext_resource type="Texture2D" uid="uid://ds8oisewff002" path="res://tilesets/igrishta_fence_side.png" id="9_4kngs"]
+[ext_resource type="Texture2D" uid="uid://dif53vgg4l6kv" path="res://tilesets/basketball_net.png" id="5_mnm8f"]
+[ext_resource type="Texture2D" uid="uid://cseqbgddvr5wa" path="res://tilesets/igrishta_fence_middle.png" id="6_004r4"]
+[ext_resource type="Texture2D" uid="uid://l8qyplxor1kd" path="res://tilesets/igrishta_fence_top.png" id="7_rt0s2"]
+[ext_resource type="Texture2D" uid="uid://h8bhpj073d20" path="res://tilesets/igrishta_fence_corner.png" id="8_f66mj"]
+[ext_resource type="Texture2D" uid="uid://b4gmcxxywg0m5" path="res://tilesets/igrishta_fence_side.png" id="9_4kngs"]
 [ext_resource type="Texture2D" uid="uid://deml7if05642k" path="res://tilesets/stairs_side.png" id="10_amjfq"]
 [ext_resource type="Texture2D" uid="uid://chbfhun2g10y7" path="res://tilesets/school_door_corener.png" id="11_7mhvg"]
 [ext_resource type="Texture2D" uid="uid://cqxlldj75caks" path="res://tilesets/school_door_doorknob.png" id="12_xbksp"]
@@ -256,7 +256,7 @@ texture = ExtResource("3_yqrcl")
 7:6/0 = 0
 9:6/0 = 0
 10:6/0 = 0
-10:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -4, -8, -4, 8, -8, 8)
+10:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -4, -8, 8, -8, 8, -4, -4, -4, -4, 8, -8, 8)
 11:6/0 = 0
 12:6/0 = 0
 13:6/0 = 0
@@ -264,6 +264,7 @@ texture = ExtResource("3_yqrcl")
 15:6/0 = 0
 15:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(4, -8, 8, -8, 8, -8, 8, 8, 4, 8)
 16:6/0 = 0
+16:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -4, -8, -4, 8, -8, 8)
 17:6/0 = 0
 18:6/0 = 0
 19:6/0 = 0
