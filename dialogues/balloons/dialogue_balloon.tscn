@@ -80,9 +80,9 @@ theme = SubResource("Theme_vnod2")
 [node name="NameContainer" type="Panel" parent="Balloon" unique_id=637209216]
 z_index = 1
 layout_mode = 0
-offset_left = 20.0
-offset_top = 225.0
-offset_right = 180.0
+offset_left = 26.0
+offset_top = 223.0
+offset_right = 155.0
 offset_bottom = 255.0
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon/NameContainer" unique_id=1300093856]
@@ -117,7 +117,7 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 10.0
+offset_left = 14.0
 offset_top = -120.0
 offset_right = -10.0
 offset_bottom = -8.0
@@ -151,7 +151,7 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -58.0
+offset_left = 40.0
 offset_top = -357.0
 offset_right = 337.0
 offset_bottom = -116.0
@@ -169,6 +169,15 @@ response_template = NodePath("ResponseExample")
 [node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu" unique_id=275581222]
 layout_mode = 2
 text = "Response example"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=873957249]
+z_index = -1
+anchors_preset = -1
+anchor_right = 0.22700001
+anchor_bottom = 1.0
+offset_right = -0.28001404
+grow_vertical = 2
+stretch_mode = 6
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
 [connection signal="response_selected" from="Balloon/Responses/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]
