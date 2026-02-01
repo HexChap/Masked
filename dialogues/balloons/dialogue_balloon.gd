@@ -58,6 +58,9 @@ func apply_dialogue_line() -> void:
 	if char_name.is_empty():
 		name_container.visible = false
 		charecter_rect.texture = null
+	else:
+		name_container.visible = true
+	
 	super.apply_dialogue_line()
 
 func update_portrait(c_name: String, emotion: String) -> void:
