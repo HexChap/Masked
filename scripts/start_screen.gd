@@ -30,7 +30,7 @@ func _on_new_game_button_up() -> void:
 
 func _on_continue_button_up() -> void:
 	DataManager.load_file_data()
-	var level_to_load = DataManager.get_file_data().game_data.level
+	var level_to_load = DataManager.get_file_data().game_data.level_file_path
 	SceneManager.swap_scenes(level_to_load, get_tree().root, self, Const.TRANSITION.FADE_TO_WHITE)
 
 func _on_settings_button_up() -> void:

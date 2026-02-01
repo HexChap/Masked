@@ -1,0 +1,15 @@
+~ start
+Eloise: Why do you look so sad?
+Eloise: Smile, life is beautiful when you don't care about anyone
+Would it be that beautiful?
+- I'm fine, just tired
+- Yeah, it is..
+Lara: All good?
+I'm so tired from these interactions
+{{ Globals.player_name }}: I think I'm gonna head home
+Lara: Well, okay, if you want to
+{{ Globals.player_name }}: Bye, guys
+*leaves*
+Eloise: He's strange, isn't he?
+Ilya: Yeah, he is
+=> END

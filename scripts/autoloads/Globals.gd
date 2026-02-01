@@ -8,6 +8,15 @@ var user_prefs: UserPrefs
 var settings_menu_scene: PackedScene = preload("res://scenes/menus/settings_menu.tscn")
 var settings_menu = null
 
+var escape_menu_scene: PackedScene = preload("res://scenes/menus/escape.tscn")
+var escape_menu = null
+
+
+var can_player_move = true
+
+var player_name = "Rika"
+var reputation = 0
+
 @warning_ignore("unused_signal")
 signal transfer_start
 @warning_ignore("unused_signal")
@@ -39,6 +48,13 @@ func open_settings_menu():
 	else:
 		push_warning('settings menu already exists in this scene')
 
+func open_escape_menu():
+	if get_tree().get_nodes_in_group("global_escape_menu").size() > 0:
+		push_warning("A global menu is already open.")
+		return
+	var new_menu = escape_menu_scene.instantiate()
+	get_tree().root.add_child(new_menu)
+
 func get_player(id: int):
 	var players = get_players()
 	var found = players.filter(func(t): return t.player_id == id)
@@ -63,6 +79,11 @@ func load_last_saved_level():
 	var level_to_load = DataManager.get_file_data().game_data.level
 	if level_to_load:
 		SceneManager.swap_scenes(level_to_load, get_tree().root, get_current_level(), Const.TRANSITION.FADE_TO_WHITE)
+
+func load_game_state():
+	var game_data = DataManager.get_file_data().game_data
+	reputation = game_data.reputation
+	player_name = game_data.player_name
 
 func get_node_inventory(node):
 	return node.inventory if node.get("inventory") else null

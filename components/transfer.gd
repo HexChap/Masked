@@ -44,9 +44,9 @@ func _transfer_to_position(entity):
 	Globals.transfer_start.emit()
 	var destination = Globals.get_destination(destination_name)
 	if destination:
-		entity.global_position = destination.global_position
 		if destination is Transfer and destination.direction:
 			entity.facing = destination.direction.to_vector
+		entity.global_position = destination.global_position
 	else:
 		push_warning("%s: destination %s not found!" % [get_path(), destination])
 	await get_tree().create_timer(0.5).timeout

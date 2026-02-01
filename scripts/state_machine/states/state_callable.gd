@@ -27,6 +27,14 @@ func enter():
 		complete.call_deferred()
 	_call_method_by_name()
 
+func exit():
+	if !_check_node():
+		return
+	
+	if await_signal_to_complete != "":
+		if node.is_connected(await_signal_to_complete, complete):
+			node.disconnect(await_signal_to_complete, complete)
+
 func _check_node():
 	if node_path != "":
 		node = get_node_or_null(node_path)

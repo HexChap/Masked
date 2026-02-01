@@ -1,6 +1,7 @@
 extends Resource
 class_name DataPlayer
 
+@export var name: String = ""
 @export var position = Vector2.ZERO
 @export var facing = Vector2.ZERO
 @export var hp: int
