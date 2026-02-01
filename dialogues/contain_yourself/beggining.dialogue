@@ -1,9 +1,9 @@
 ~ start
-Amanda: Hiii, {{ Globals.player_name }}, we haven't seen each other in so long!
-Steve: Where did you disappear to, we've been looking for you for so long, how are you?
+Amanda:[happy] Hiii, {{ Globals.player_name }}, we haven't seen each other in so long!
+Steve:[happy] Where did you disappear to, we've been looking for you for so long, how are you?
 {{ Globals.player_name }}: hello, I'm fine...
 Amanda: Have you seen the last episode of Strange and Happy?
-Amanda: [speed=1.5]Emma did really well, but Michael's betrayal was truly unexpected!
+Amanda: [speed=1.5][happy]Emma did really well, but Michael's betrayal was truly unexpected!
 Can't they just shut the fuck up sometimes.
 [shake rate=20 level=10]Irrational, blunt, stupid...[/shake]
 bleh {{Globals.reputation}}

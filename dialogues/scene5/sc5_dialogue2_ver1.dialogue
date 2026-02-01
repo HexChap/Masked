@@ -5,13 +5,13 @@ Amanda: Heey, not much, just discussing going to this new quest place on Saturda
 Is it that easy?
 {{ Globals.player_name }}: Is it finally opened? 
 {{ Globals.player_name }}: It took them so much time to make it happen
-Amanda: YESS!!
+Amanda:[happy] YESS!!
 Steve: Wanna come? I know that you have other friends but...
 {{ Globals.player_name }}: Yes, I'll come
 Steve: ...Really?
 {{ Globals.player_name }}: Yeah, guys, listen, I wanna apologise, I've been mean to you recently and I....
-Amanda: That's okay, we understand, don't explain yourself
+Amanda:[happy] That's okay, we understand, don't explain yourself
 {{ Globals.player_name }}: Thank you, guys
-Steve: So, Saturday...
+Steve:[happy] So, Saturday...
 I will be fine here too
 => END

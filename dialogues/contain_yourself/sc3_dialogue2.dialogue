@@ -1,9 +1,9 @@
 ~ start
 {{ Globals.player_name }}: No, I haven't managed to watch it yet, I was busy
 Amanda: Oh wow..then sorry for the spoilers 
-Steve: You just ruined the experience for him
-Steve: And speaking of experience, there's an update for Boys and Buses
-Steve: Do you want to get together this weekend to play it? 
+Steve:[happy] You just ruined the experience for him
+Steve:[happy] And speaking of experience, there's an update for Boys and Buses
+Steve:[happy] Do you want to get together this weekend to play it? 
 They're talking too much. All that stupid noise for nothing.
 [shake rate=20 level=10]Ridiculous, slow, naive...[/shake]
 => END

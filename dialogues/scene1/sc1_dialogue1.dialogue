@@ -1,13 +1,13 @@
 ~ start
 Eloise: Ugh, my parents are so annoying, they won't leave me alone!
 Eloise: The other day they made me sit at the table with the whole family for 2 whole hours!!
-Eloise: It was terrible
+Eloise:[mad] It was terrible
 Is spending time with your family that bad?
 {{ Globals.player_name }}: And why were torturing you like that?
 Eloise: Well, my grandma had 60th birthday 
 {{ Globals.player_name }}: ...And you didn't want to celebrate it?
-Ilya: Nah, why would she want to? 
-Ilya: She's old hahaha 
+Ilya:[happy] Nah, why would she want to? 
+Ilya:[happy] She's old hahaha 
 I've always loved talking to my grandma...
 But maybe they're right? 
 => END
