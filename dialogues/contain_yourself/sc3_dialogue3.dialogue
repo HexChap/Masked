@@ -1,10 +1,11 @@
 ~ start
-Okay, I'm fine, I can do it
-{{ Globals.player_name }}: I don't know, we'll see, maybe
+Okay, I'm fine, I can do it.
+Breathe. Don't snap. Not yet.
+{{ Globals.player_name }}: I don't know, we'll see, maybe...
 Steve: [happy] Okay, I'll text you tomorrow so we can figure it out!
 *The bell rings*
 Thank God!
-{{ Globals.player_name }}: I have to go, I'll see you later 
-Steve: [happy] bye
-Amanda: [happy] bye!!
+{{ Globals.player_name }}: I have to go, I'll see you later.
+Steve: [happy] Bye.
+Amanda: [happy] Bye!!
 => END

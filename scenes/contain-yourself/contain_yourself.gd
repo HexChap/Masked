@@ -45,7 +45,7 @@ func _on_timer_timeout() -> void:
 		end_game()
 		Globals.reputation -= 1
 		%StateMachine.disable_state(%StateMachine.current_state)
-		%StateMachine.enable_state_by_name("foo")
+		%StateMachine.enable_state_by_name("dialogue_crashout")
 		contain_yourself_lose.emit()
 		return
 

@@ -1,4 +1,5 @@
 ~ start
+just checking: {{ Globals.reputation }}
 Eloise: Why do you look so sad?
 Eloise: [happy] Smile, life is beautiful when you don't care about anyone
 Would it be that beautiful?

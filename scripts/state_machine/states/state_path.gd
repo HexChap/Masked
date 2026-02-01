@@ -49,3 +49,7 @@ func _check_point_reached():
 		current_point_id += 1
 		if current_point_id < path_curve.point_count:
 			_set_target_position()
+			print(1)
+		else:
+			Globals.path_end_reached.emit()
+			exit()

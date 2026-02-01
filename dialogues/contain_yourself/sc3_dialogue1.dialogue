@@ -1,0 +1,13 @@
+~ start
+Amanda: Hiii, {{ Globals.player_name }}, we haven't seen each other in so long!
+Steve: Where did you disappear to, we've been looking for you for so long. How are you?
+{{ Globals.player_name }}: Uhm.. [wait=1]hello, I'm fine...
+Amanda: Have you seen the last episode of Strange and Happy?
+{{ Globals.player_name }}: Not yet, why?
+Amanda: [speed=1.5]Emma did really well, but Michael's betrayal was so unexpected!
+{{ Globals.player_name }}: ...I haven't gotten that far yet.
+Can't they just shut their mouths sometimes...
+Amanda: [speed=3]GEEZ! I'm so sorry [shake rate=20 level=10]T-T!
+[shake rate=20 level=10]Irrational, blunt, stupid.[/shake]
+*Try to get a grip and don't crashout. Control using the arrows on your keyboard*
+=> END

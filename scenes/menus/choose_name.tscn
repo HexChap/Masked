@@ -17,7 +17,7 @@ offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_dyt6x")
-start_level = "uid://bvqge4co1cl2j"
+start_level = "uid://cqkfob7eur3n"
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1728565997]
 material = SubResource("ShaderMaterial_dyt6x")

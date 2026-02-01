@@ -18,7 +18,7 @@
 [ext_resource type="Script" uid="uid://c6r5xohr5314y" path="res://components/target_manager.gd" id="12_3v4fd"]
 [ext_resource type="Resource" uid="uid://ccawn3m37qmnb" path="res://dialogues/commons.dialogue" id="15_v58u8"]
 [ext_resource type="Script" uid="uid://ccgjxk0s51hvy" path="res://scripts/state_machine/change_state_listener.gd" id="16_n3tga"]
-[ext_resource type="Resource" uid="uid://i1xp4mkcdcfa" path="res://dialogues/contain_yourself/beggining.dialogue" id="16_q5hn5"]
+[ext_resource type="Resource" uid="uid://i1xp4mkcdcfa" path="res://dialogues/contain_yourself/sc3_dialogue1.dialogue" id="16_q5hn5"]
 [ext_resource type="Texture2D" uid="uid://cybvj1oo680p2" path="res://entities/npcs/chara - gayAss.png" id="20_67h3n"]
 [ext_resource type="Resource" uid="uid://borercpddmnfc" path="res://dialogues/start.dialogue" id="21_t3kmv"]
 [ext_resource type="Script" uid="uid://ckeoajh2lh4kd" path="res://scripts/state_machine/states/state_debug.gd" id="22_3v4fd"]
@@ -922,14 +922,7 @@ on_completion = [NodePath("../dialogue_pt3")]
 [node name="dialogue_pt3" parent="Entities/ContainYourself/StateMachine" index="5" unique_id=77468220 node_paths=PackedStringArray("on_completion")]
 dialogue = ExtResource("15_v58u8")
 title = "chest_content"
-on_completion = [NodePath("../start_game_pt3")]
-
-[node name="start_game_pt3" parent="Entities/ContainYourself/StateMachine" index="6" unique_id=1044994394 node_paths=PackedStringArray("node", "on_completion")]
-node = NodePath("../..")
-method_name = "start_game"
-send_statemachine_params = false
-await_signal_to_complete = "contain_yourself_win"
-on_completion = [NodePath("../foo")]
+on_completion = [null]
 
 [node name="ChangeStateListener" type="Node2D" parent="Entities/ContainYourself" index="5" unique_id=773835759 node_paths=PackedStringArray("listen_to")]
 script = ExtResource("16_n3tga")

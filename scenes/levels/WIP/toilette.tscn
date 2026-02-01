@@ -1,5 +1,56 @@
 [gd_scene format=3 uid="uid://cftgjrjbeda24"]
 
 [ext_resource type="PackedScene" uid="uid://b0b0jp36dubff" path="res://scenes/levels/Level.tscn" id="1_a18t4"]
+[ext_resource type="Script" uid="uid://cy8h0ht01llrr" path="res://scenes/levels/WIP/toilette.gd" id="2_6xb4k"]
+[ext_resource type="Script" uid="uid://dp66ice2hhj8n" path="res://scripts/state_machine/state_machine.gd" id="3_kx5ri"]
+[ext_resource type="Script" uid="uid://cwq4nm0vsv1l5" path="res://scripts/state_machine/states/state_dialogue.gd" id="4_gek7b"]
+[ext_resource type="Script" uid="uid://dd2m5xedjwd4m" path="res://scripts/state_machine/states/state_callable.gd" id="6_kx5ri"]
+[ext_resource type="Resource" uid="uid://cnk4bn5upp0cp" path="res://dialogues/scene4/sc4_monologue_pt1.dialogue" id="6_qv5ow"]
+[ext_resource type="Resource" uid="uid://bvbrlsonew4rh" path="res://dialogues/scene4/sc4_monologue_pt2.dialogue" id="7_gek7b"]
 
 [node name="Level" unique_id=766387886 instance=ExtResource("1_a18t4")]
+script = ExtResource("2_6xb4k")
+
+[node name="StateMachine" type="Node" parent="." index="1" unique_id=748407923 node_paths=PackedStringArray("current_state")]
+script = ExtResource("3_kx5ri")
+current_state = NodePath("StateCallable")
+debug = true
+metadata/_custom_type_script = "uid://dp66ice2hhj8n"
+
+[node name="StateCallable" type="Node" parent="StateMachine" index="0" unique_id=1013657835 node_paths=PackedStringArray("node", "on_completion")]
+script = ExtResource("6_kx5ri")
+node = NodePath("../..")
+method_name = "set_start"
+send_statemachine_params = false
+on_completion = [NodePath("../dialogue_pt1")]
+metadata/_custom_type_script = "uid://dd2m5xedjwd4m"
+
+[node name="dialogue_pt1" type="Node" parent="StateMachine" index="1" unique_id=448575117 node_paths=PackedStringArray("on_completion")]
+script = ExtResource("4_gek7b")
+dialogue = ExtResource("6_qv5ow")
+title = "start"
+on_completion = [NodePath("../change_bg")]
+metadata/_custom_type_script = "uid://cwq4nm0vsv1l5"
+
+[node name="change_bg" type="Node" parent="StateMachine" index="2" unique_id=733155660 node_paths=PackedStringArray("node", "on_completion")]
+script = ExtResource("6_kx5ri")
+node = NodePath("../..")
+method_name = "change_background"
+send_statemachine_params = false
+on_completion = [NodePath("../dialogue_pt2")]
+metadata/_custom_type_script = "uid://dd2m5xedjwd4m"
+
+[node name="dialogue_pt2" type="Node" parent="StateMachine" index="3" unique_id=609510428]
+script = ExtResource("4_gek7b")
+dialogue = ExtResource("7_gek7b")
+title = "start"
+metadata/_custom_type_script = "uid://cwq4nm0vsv1l5"
+
+[node name="Background" type="TextureRect" parent="." index="7" unique_id=1307139201]
+unique_name_in_owner = true
+offset_top = -1.0
+offset_right = 640.0
+offset_bottom = 361.0
+expand_mode = 1
+
+[editable path="GameCamera2D"]

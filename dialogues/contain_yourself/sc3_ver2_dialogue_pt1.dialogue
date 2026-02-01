@@ -1,7 +1,6 @@
 ~ start
 [shake rate=20 level=20]I CAN'T DO THAT ANYMORE[/shake]
+[shake rate=20 level=20]I CAN'T STAND THESE GUYS[/shake]
 {{ Globals.player_name }}: [mad] I HAVE TO GO!
 *runs away*
-Steve: He's been acting really strange recently
-Amanda: I don't know what's wrong with him 
 => END

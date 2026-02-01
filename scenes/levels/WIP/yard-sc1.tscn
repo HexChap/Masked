@@ -2,12 +2,22 @@
 
 [ext_resource type="PackedScene" uid="uid://bvqge4co1cl2j" path="res://scenes/levels/WIP/school_yard.tscn" id="1_vqiey"]
 [ext_resource type="Shader" uid="uid://blugt5j7e8tag" path="res://shaders/flash.gdshader" id="2_bha4u"]
+[ext_resource type="PackedScene" uid="uid://d2nwo602rnihe" path="res://entities/entity.tscn" id="2_e3jyb"]
+[ext_resource type="Script" uid="uid://b04o3cp4eedxd" path="res://scenes/levels/WIP/yard_sc_1.gd" id="2_q4yr0"]
 [ext_resource type="Texture2D" uid="uid://2us16ikdxggi" path="res://entities/player/chara-hero.png" id="3_vwd60"]
 [ext_resource type="Texture2D" uid="uid://cftn847pk784q" path="res://entities/npcs/chara - homophobicBastard.png" id="4_5y2ss"]
 [ext_resource type="Texture2D" uid="uid://cuder7xbleaw" path="res://entities/npcs/chara - gopnik.png" id="5_ybdly"]
 [ext_resource type="Texture2D" uid="uid://csme6jll0b5rc" path="res://entities/npcs/chara - thatFuck.png" id="6_cofow"]
+[ext_resource type="Script" uid="uid://bgm8n3pwwbymt" path="res://scripts/interaction_area.gd" id="6_q4yr0"]
+[ext_resource type="Script" uid="uid://dp66ice2hhj8n" path="res://scripts/state_machine/state_machine.gd" id="7_sq0ip"]
+[ext_resource type="Script" uid="uid://cmc5vhgmy6nat" path="res://scripts/state_machine/states/state_interact.gd" id="8_d73tu"]
+[ext_resource type="Script" uid="uid://qa3ikcf8scy7" path="res://scripts/state_machine/states/state_face.gd" id="9_ho6ci"]
+[ext_resource type="Script" uid="uid://cwq4nm0vsv1l5" path="res://scripts/state_machine/states/state_dialogue.gd" id="10_oqjbi"]
+[ext_resource type="Resource" uid="uid://c1xm1wt8l8k2j" path="res://dialogues/scene1/sc1_dialogue1.dialogue" id="11_g0c0b"]
+[ext_resource type="Script" uid="uid://dd2m5xedjwd4m" path="res://scripts/state_machine/states/state_callable.gd" id="12_qbjw2"]
+[ext_resource type="Script" uid="uid://c6r5xohr5314y" path="res://components/target_manager.gd" id="14_6rvwv"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_n3otl"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e3jyb"]
 resource_local_to_scene = true
 shader = ExtResource("2_bha4u")
 shader_parameter/flash_color = Color(1, 1, 1, 1)
@@ -173,7 +183,7 @@ region = Rect2(64, 64, 32, 32)
 atlas = ExtResource("4_5y2ss")
 region = Rect2(96, 64, 32, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_414ag"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_q4yr0"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -445,7 +455,10 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_4v3ux"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_m1erl"]
+radius = 28.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sq0ip"]
 resource_local_to_scene = true
 shader = ExtResource("2_bha4u")
 shader_parameter/flash_color = Color(1, 1, 1, 1)
@@ -515,7 +528,7 @@ region = Rect2(64, 64, 32, 32)
 atlas = ExtResource("5_ybdly")
 region = Rect2(96, 64, 32, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_be5rr"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_d73tu"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -787,7 +800,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_e3jyb"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ho6ci"]
 resource_local_to_scene = true
 shader = ExtResource("2_bha4u")
 shader_parameter/flash_color = Color(1, 1, 1, 1)
@@ -857,7 +870,7 @@ region = Rect2(64, 64, 32, 32)
 atlas = ExtResource("6_cofow")
 region = Rect2(96, 64, 32, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_q4yr0"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_oqjbi"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -1129,19 +1142,125 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Level" unique_id=136970894 instance=ExtResource("1_vqiey")]
+[node name="Level2" unique_id=136970894 instance=ExtResource("1_vqiey")]
+script = ExtResource("2_q4yr0")
 
-[node name="AnimatedSprite2D" parent="Entities/Eloise" parent_id_path=PackedInt32Array(724200864) index="2" unique_id=927983283]
-material = SubResource("ShaderMaterial_n3otl")
-sprite_frames = SubResource("SpriteFrames_414ag")
+[node name="P1" parent="Entities" index="0"]
+position = Vector2(296, 849)
 
-[node name="AnimatedSprite2D" parent="Entities/Ilya" parent_id_path=PackedInt32Array(1518221782) index="2" unique_id=927983283]
-material = SubResource("ShaderMaterial_4v3ux")
-sprite_frames = SubResource("SpriteFrames_be5rr")
+[node name="Eloise" parent="Entities" index="1" unique_id=724200864 instance=ExtResource("2_e3jyb")]
+position = Vector2(324, 828)
 
-[node name="AnimatedSprite2D" parent="Entities/Lara" parent_id_path=PackedInt32Array(129421132) index="2" unique_id=927983283]
+[node name="AnimatedSprite2D" parent="Entities/Eloise" index="2" unique_id=927983283]
 material = SubResource("ShaderMaterial_e3jyb")
 sprite_frames = SubResource("SpriteFrames_q4yr0")
+
+[node name="InteractionArea" type="Area2D" parent="Entities/Eloise" index="7" unique_id=1251413973]
+z_index = -1
+collision_layer = 0
+collision_mask = 8
+monitorable = false
+script = ExtResource("6_q4yr0")
+metadata/_custom_type_script = "uid://bgm8n3pwwbymt"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Entities/Eloise/InteractionArea" index="0" unique_id=1475716282]
+shape = SubResource("CircleShape2D_m1erl")
+
+[node name="StateMachine" type="Node" parent="Entities/Eloise" index="8" unique_id=1764605008 node_paths=PackedStringArray("current_state") groups=["save"]]
+script = ExtResource("7_sq0ip")
+current_state = NodePath("interact")
+
+[node name="interact" type="Node" parent="Entities/Eloise/StateMachine" index="0" unique_id=1870829981 node_paths=PackedStringArray("interaction_area", "on_completion")]
+script = ExtResource("8_d73tu")
+interaction_area = NodePath("../../InteractionArea")
+action_trigger = "interact"
+one_shot = false
+on_completion = [NodePath("../start_dialogue")]
+
+[node name="face_player" type="Node" parent="Entities/Eloise/StateMachine/interact" index="0" unique_id=1783915342 node_paths=PackedStringArray("target_manager")]
+script = ExtResource("9_ho6ci")
+target_manager = NodePath("../../../TargetManager")
+metadata/_custom_type_script = "uid://b6xeyy0l5h482"
+
+[node name="start_dialogue" type="Node" parent="Entities/Eloise/StateMachine" index="1" unique_id=39198127 node_paths=PackedStringArray("on_completion")]
+script = ExtResource("10_oqjbi")
+dialogue = ExtResource("11_g0c0b")
+title = "start"
+on_completion = [NodePath("../transition")]
+
+[node name="transition" type="Node" parent="Entities/Eloise/StateMachine" index="2" unique_id=718252057 node_paths=PackedStringArray("node", "on_completion")]
+script = ExtResource("12_qbjw2")
+node = NodePath("../../../..")
+method_name = "transition"
+send_statemachine_params = false
+on_completion = [NodePath("../interact")]
+metadata/_custom_type_script = "uid://dd2m5xedjwd4m"
+
+[node name="TargetManager" type="Node2D" parent="Entities/Eloise" index="11" unique_id=2105497204]
+script = ExtResource("14_6rvwv")
+target_player_id = 1
+
+[node name="Ilya" parent="Entities" index="2" unique_id=2031165509 instance=ExtResource("2_e3jyb")]
+position = Vector2(308, 825)
+
+[node name="AnimatedSprite2D" parent="Entities/Ilya" index="2" unique_id=927983283]
+material = SubResource("ShaderMaterial_sq0ip")
+sprite_frames = SubResource("SpriteFrames_d73tu")
+
+[node name="InteractionArea" type="Area2D" parent="Entities/Ilya" index="7" unique_id=659858714]
+z_index = -1
+collision_layer = 0
+collision_mask = 8
+monitorable = false
+script = ExtResource("6_q4yr0")
+metadata/_custom_type_script = "uid://bgm8n3pwwbymt"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Entities/Ilya/InteractionArea" index="0" unique_id=771420711]
+shape = SubResource("CircleShape2D_m1erl")
+
+[node name="StateMachine" type="Node" parent="Entities/Ilya" index="8" unique_id=1069985223 node_paths=PackedStringArray("current_state")]
+script = ExtResource("7_sq0ip")
+current_state = NodePath("face_player")
+
+[node name="face_player" type="Node" parent="Entities/Ilya/StateMachine" index="0" unique_id=931326151 node_paths=PackedStringArray("target_manager")]
+script = ExtResource("9_ho6ci")
+target_manager = NodePath("../../TargetManager")
+metadata/_custom_type_script = "uid://b6xeyy0l5h482"
+
+[node name="TargetManager" type="Node2D" parent="Entities/Ilya" index="11" unique_id=2051698045]
+script = ExtResource("14_6rvwv")
+target_player_id = 1
+
+[node name="Lara" parent="Entities" index="3" unique_id=1062864177 instance=ExtResource("2_e3jyb")]
+position = Vector2(321, 853)
+
+[node name="AnimatedSprite2D" parent="Entities/Lara" index="2" unique_id=927983283]
+material = SubResource("ShaderMaterial_ho6ci")
+sprite_frames = SubResource("SpriteFrames_oqjbi")
+
+[node name="InteractionArea" type="Area2D" parent="Entities/Lara" index="7" unique_id=13249222]
+z_index = -1
+collision_layer = 0
+collision_mask = 8
+monitorable = false
+script = ExtResource("6_q4yr0")
+metadata/_custom_type_script = "uid://bgm8n3pwwbymt"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Entities/Lara/InteractionArea" index="0" unique_id=1287637463]
+shape = SubResource("CircleShape2D_m1erl")
+
+[node name="StateMachine" type="Node" parent="Entities/Lara" index="8" unique_id=747709606 node_paths=PackedStringArray("current_state")]
+script = ExtResource("7_sq0ip")
+current_state = NodePath("face_player")
+
+[node name="face_player" type="Node" parent="Entities/Lara/StateMachine" index="0" unique_id=1018355846 node_paths=PackedStringArray("target_manager")]
+script = ExtResource("9_ho6ci")
+target_manager = NodePath("../../TargetManager")
+metadata/_custom_type_script = "uid://b6xeyy0l5h482"
+
+[node name="TargetManager" type="Node2D" parent="Entities/Lara" index="11" unique_id=1813159154]
+script = ExtResource("14_6rvwv")
+target_player_id = 1
 
 [editable path="Entities/Eloise"]
 [editable path="Entities/Ilya"]

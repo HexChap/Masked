@@ -15,7 +15,7 @@ var escape_menu = null
 var can_player_move = true
 
 var player_name = "Rika"
-var reputation = 0
+var reputation = -2
 
 @warning_ignore("unused_signal")
 signal transfer_start
@@ -27,6 +27,8 @@ signal player_added_to_scene(player: PlayerEntity)
 signal state_machine_initialized(state_machine: StateMachine)
 @warning_ignore("unused_signal")
 signal destination_found(destination_path: String)
+@warning_ignore("unused_signal")
+signal path_end_reached
 
 func _ready():
 	user_prefs = UserPrefs.load_or_create()
@@ -55,7 +57,7 @@ func open_escape_menu():
 	var new_menu = escape_menu_scene.instantiate()
 	get_tree().root.add_child(new_menu)
 
-func get_player(id: int):
+func get_player(id: int) -> PlayerEntity:
 	var players = get_players()
 	var found = players.filter(func(t): return t.player_id == id)
 	var player = found[0] if found.size() > 0 else null

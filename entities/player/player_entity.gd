@@ -66,3 +66,15 @@ func disable_entity(value: bool, delay = 0.0):
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("settings"):
 		Globals.open_escape_menu()
+
+func follow_path(path: Path2D):
+	var state = StatePath.new()
+	var sm: StateMachine = get_node("StateMachine")
+	state.path = path
+	state.repeats = 1
+	state.state_machine = sm
+	state.on_completion = [sm.get_node_or_null("move")] as Array[State]
+
+	sm.add_child(state)
+	enable_state(state)
+	

@@ -22,6 +22,7 @@ func physics_update(_delta):
 
 func _follow():
 	if navigation_agent.is_navigation_finished():
+		print(1)
 		complete()
 		return
 	if entity:
