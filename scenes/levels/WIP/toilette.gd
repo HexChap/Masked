@@ -1,6 +1,7 @@
 @tool
 extends Level
 
+var bg3 = preload("res://icons/bg_kenef3.png")
 var bg2 = preload("res://icons/bg_kenef2.png")
 var bg1 = preload("res://icons/bg_kenef.png")
 
@@ -13,7 +14,10 @@ func _ready() -> void:
 	#print(Globals.get_player(1).position)
 
 func set_start(id: int = 2):
+	%Background.texture = bg3
+
+func change_background1():
 	%Background.texture = bg1
 
-func change_background(id: int = 2):
-	%Background.texture = bg2 if id == 2 else bg1
+func change_background2():
+	%Background.texture = bg2

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://nbt2t35mljor"]
 
 [ext_resource type="PackedScene" uid="uid://bvqge4co1cl2j" path="res://scenes/levels/WIP/school_yard.tscn" id="1_vytlg"]
-[ext_resource type="Script" path="res://scenes/levels/WIP/yard_sc_2.gd" id="2_4n7vu"]
+[ext_resource type="Script" uid="uid://bf8gcqus220y5" path="res://scenes/levels/WIP/yard_sc_2.gd" id="2_4n7vu"]
 [ext_resource type="PackedScene" uid="uid://d2nwo602rnihe" path="res://entities/entity.tscn" id="2_8t1rm"]
 [ext_resource type="Shader" uid="uid://blugt5j7e8tag" path="res://shaders/flash.gdshader" id="3_4n7vu"]
 [ext_resource type="Texture2D" uid="uid://2us16ikdxggi" path="res://entities/player/chara-hero.png" id="4_ku346"]
@@ -21,7 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://drlybqhgk4x4o" path="res://entities/npcs/chara - blackPerson.png" id="18_d3pql"]
 [ext_resource type="Texture2D" uid="uid://c1p3qonllgffl" path="res://entities/npcs/chara - gayAss.png" id="21_7sh33"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_2a1w3"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w7hk1"]
 resource_local_to_scene = true
 shader = ExtResource("3_4n7vu")
 shader_parameter/flash_color = Color(1, 1, 1, 1)
@@ -187,7 +187,7 @@ region = Rect2(64, 64, 32, 32)
 atlas = ExtResource("18_d3pql")
 region = Rect2(96, 64, 32, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_bp1kw"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_d3pql"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -462,7 +462,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_jfx66"]
 radius = 28.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ffrlx"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mwfvw"]
 resource_local_to_scene = true
 shader = ExtResource("3_4n7vu")
 shader_parameter/flash_color = Color(1, 1, 1, 1)
@@ -532,7 +532,7 @@ region = Rect2(64, 64, 32, 32)
 atlas = ExtResource("21_7sh33")
 region = Rect2(96, 64, 32, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_2ijk7"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_2nqua"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -792,7 +792,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_r288g"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7sh33"]
 resource_local_to_scene = true
 shader = ExtResource("3_4n7vu")
 shader_parameter/flash_color = Color(1, 1, 1, 1)
@@ -958,7 +958,7 @@ region = Rect2(64, 64, 32, 32)
 atlas = ExtResource("5_vshpo")
 region = Rect2(96, 64, 32, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_i2p10"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_r288g"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -1233,7 +1233,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_26eyv"]
 radius = 28.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_v85dp"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i2p10"]
 resource_local_to_scene = true
 shader = ExtResource("3_4n7vu")
 shader_parameter/flash_color = Color(1, 1, 1, 1)
@@ -1303,7 +1303,7 @@ region = Rect2(64, 64, 32, 32)
 atlas = ExtResource("15_6dcse")
 region = Rect2(96, 64, 32, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_w6r32"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_v85dp"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -1575,7 +1575,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_6dcse"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w6r32"]
 resource_local_to_scene = true
 shader = ExtResource("3_4n7vu")
 shader_parameter/flash_color = Color(1, 1, 1, 1)
@@ -1645,7 +1645,7 @@ region = Rect2(64, 64, 32, 32)
 atlas = ExtResource("16_c8mws")
 region = Rect2(96, 64, 32, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_c8mws"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_6dcse"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -1928,8 +1928,8 @@ unique_name_in_owner = true
 position = Vector2(554, 817)
 
 [node name="AnimatedSprite2D" parent="Entities/CharaBlack" index="2" unique_id=927983283]
-material = SubResource("ShaderMaterial_2a1w3")
-sprite_frames = SubResource("SpriteFrames_bp1kw")
+material = SubResource("ShaderMaterial_w7hk1")
+sprite_frames = SubResource("SpriteFrames_d3pql")
 
 [node name="InteractionArea" type="Area2D" parent="Entities/CharaBlack" index="7" unique_id=52569091]
 z_index = -1
@@ -1960,8 +1960,8 @@ target_player_id = 1
 position = Vector2(583, 818)
 
 [node name="AnimatedSprite2D" parent="Entities/GayAssChara" index="2" unique_id=927983283]
-material = SubResource("ShaderMaterial_ffrlx")
-sprite_frames = SubResource("SpriteFrames_2ijk7")
+material = SubResource("ShaderMaterial_mwfvw")
+sprite_frames = SubResource("SpriteFrames_2nqua")
 
 [node name="InteractionArea" type="Area2D" parent="Entities/GayAssChara" index="7" unique_id=813645963]
 z_index = -1
@@ -1992,8 +1992,8 @@ target_player_id = 1
 position = Vector2(897, 710)
 
 [node name="AnimatedSprite2D" parent="Entities/Eloise" index="2" unique_id=927983283]
-material = SubResource("ShaderMaterial_r288g")
-sprite_frames = SubResource("SpriteFrames_i2p10")
+material = SubResource("ShaderMaterial_7sh33")
+sprite_frames = SubResource("SpriteFrames_r288g")
 
 [node name="InteractionArea" type="Area2D" parent="Entities/Eloise" index="7" unique_id=1712780014]
 z_index = -1
@@ -2049,8 +2049,8 @@ target_player_id = 1
 position = Vector2(877, 694)
 
 [node name="AnimatedSprite2D" parent="Entities/Ilya" index="2" unique_id=927983283]
-material = SubResource("ShaderMaterial_v85dp")
-sprite_frames = SubResource("SpriteFrames_w6r32")
+material = SubResource("ShaderMaterial_i2p10")
+sprite_frames = SubResource("SpriteFrames_v85dp")
 
 [node name="InteractionArea" type="Area2D" parent="Entities/Ilya" index="7" unique_id=606716474]
 z_index = -1
@@ -2080,8 +2080,8 @@ target_player_id = 1
 position = Vector2(864, 698)
 
 [node name="AnimatedSprite2D" parent="Entities/Lara" index="2" unique_id=927983283]
-material = SubResource("ShaderMaterial_6dcse")
-sprite_frames = SubResource("SpriteFrames_c8mws")
+material = SubResource("ShaderMaterial_w6r32")
+sprite_frames = SubResource("SpriteFrames_6dcse")
 
 [node name="InteractionArea" type="Area2D" parent="Entities/Lara" index="7" unique_id=223846397]
 z_index = -1

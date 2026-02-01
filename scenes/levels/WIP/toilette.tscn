@@ -35,12 +35,27 @@ metadata/_custom_type_script = "uid://cwq4nm0vsv1l5"
 [node name="change_bg" type="Node" parent="StateMachine" index="2" unique_id=733155660 node_paths=PackedStringArray("node", "on_completion")]
 script = ExtResource("6_kx5ri")
 node = NodePath("../..")
-method_name = "change_background"
+method_name = "change_background1"
 send_statemachine_params = false
 on_completion = [NodePath("../dialogue_pt2")]
 metadata/_custom_type_script = "uid://dd2m5xedjwd4m"
 
-[node name="dialogue_pt2" type="Node" parent="StateMachine" index="3" unique_id=609510428]
+[node name="dialogue_pt2" type="Node" parent="StateMachine" index="3" unique_id=609510428 node_paths=PackedStringArray("on_completion")]
+script = ExtResource("4_gek7b")
+dialogue = ExtResource("7_gek7b")
+title = "start"
+on_completion = [NodePath("../change_bg2")]
+metadata/_custom_type_script = "uid://cwq4nm0vsv1l5"
+
+[node name="change_bg2" type="Node" parent="StateMachine" index="4" unique_id=412032224 node_paths=PackedStringArray("node", "on_completion")]
+script = ExtResource("6_kx5ri")
+node = NodePath("../..")
+method_name = "change_background2"
+send_statemachine_params = false
+on_completion = [NodePath("../dialogue_pt3")]
+metadata/_custom_type_script = "uid://dd2m5xedjwd4m"
+
+[node name="dialogue_pt3" type="Node" parent="StateMachine" index="5" unique_id=1416205813]
 script = ExtResource("4_gek7b")
 dialogue = ExtResource("7_gek7b")
 title = "start"
