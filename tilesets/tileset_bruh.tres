@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://deml7if05642k" path="res://tilesets/stairs_side.png" id="10_co231"]
 [ext_resource type="Texture2D" uid="uid://chbfhun2g10y7" path="res://tilesets/school_door_corener.png" id="11_3firm"]
 [ext_resource type="Texture2D" uid="uid://cqxlldj75caks" path="res://tilesets/school_door_doorknob.png" id="12_7y47g"]
+[ext_resource type="Texture2D" uid="uid://nfk1owg1mut7" path="res://tilesets/curb_tile_corner.png" id="12_apbxv"]
 [ext_resource type="Texture2D" uid="uid://dpfrbfl4bgtiv" path="res://tilesets/school_door_middle.png" id="13_smn0t"]
 [ext_resource type="Texture2D" uid="uid://dviq048xi8nw5" path="res://tilesets/tile set1.png" id="14_brkye"]
 [ext_resource type="Texture2D" uid="uid://1erjmbd8jog6" path="res://tilesets/tilefix.png" id="15_dgmba"]
@@ -1231,18 +1232,29 @@ texture = ExtResource("11_3firm")
 1:1/0 = 0
 1:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qiask"]
+texture = ExtResource("12_apbxv")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8wc5j"]
 texture = ExtResource("12_7y47g")
 0:0/0 = 0
 0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 4, 8, 4, 8, 8, -8, 8)
 1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 4, 8, 4, 8, 8, -8, 8)
 1:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ugdby"]
 texture = ExtResource("13_smn0t")
 0:0/0 = 0
 1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, 8, 8, 8, -8)
 1:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lvefk"]
@@ -4314,3 +4326,4 @@ sources/20 = SubResource("TileSetAtlasSource_8wc5j")
 sources/21 = SubResource("TileSetAtlasSource_ugdby")
 sources/0 = SubResource("TileSetAtlasSource_2ujyb")
 sources/1 = SubResource("TileSetAtlasSource_8403n")
+sources/2 = SubResource("TileSetAtlasSource_qiask")
